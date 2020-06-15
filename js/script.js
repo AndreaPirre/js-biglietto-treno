@@ -1,6 +1,6 @@
 // chiedere all'utente il numero di km che vuole percorrere
 
-    var km = prompt("Inserisci in numero di km che vuoi percorrere:");
+    var km = prompt("Inserisci il numero di km che vuoi percorrere:");
 
 // chiedere all'utente la sua età
 
@@ -12,30 +12,30 @@
 
 // sconto del 20% per i passeggeri minorenni
 
-    var costoMinorenni = costoBase * 20 / 100;
+    var costoMinorenni = costoBase - (costoBase * 20 / 100);
 
 // sconto del 40% per i passeggeri over 65
 
-    var costoOver = costoBase * 40 / 100;
+    var costoOver = costoBase - (costoBase * 40 / 100);
 
 // calcolare il costo del biglietto in base all'età
 
-    var costoBiglietto 
+    var costoBiglietto;
 
     if (eta <= 17){
 
-        var costoMinorenni;
+        var costoBiglietto = costoBase - (costoBase * 20 / 100);
 
     }else if (eta >= 66){
 
-        var costoOver;
+        var costoBiglietto = costoOver = costoBase - (costoBase * 40 / 100);
 
     }else {
 
-        var costoBase;
+        var costoBiglietto = costoBase;
 
     }
 
 // scrivere all'utente l'importo totale del biglietto
 
-    document.getElementById('costoBase').innerHTML = "Questo è il costo del biglietto per il tuo tragitto: " + costoBiglietto + " euro";
+    document.getElementById('costo').innerHTML = "Questo è il costo del biglietto per il tuo tragitto: " + costoBiglietto + " euro";
