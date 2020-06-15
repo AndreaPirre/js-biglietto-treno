@@ -29,7 +29,7 @@
 
     }else if (eta >= 66){
 
-        var costoBiglietto = costoOver.toFixed(2) + " euro" + " (hai più di 65 anni, è già stato applicato uno sconto del 40%)"  ;;
+        var costoBiglietto = costoOver.toFixed(2) + " euro" + " (hai più di 65 anni, è già stato applicato uno sconto del 40%)";
 
     }else {
 
