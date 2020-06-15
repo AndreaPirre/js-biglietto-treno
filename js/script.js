@@ -24,18 +24,19 @@
 
     if (eta <= 17){
 
-        var costoBiglietto = costoBase - (costoBase * 20 / 100);
+        var costoBiglietto = costoMinorenni.toFixed(2) + " euro" + " (hai meno di 18 anni, è già stato applicato uno sconto del 20% )"  ;
+
 
     }else if (eta >= 66){
 
-        var costoBiglietto = costoOver = costoBase - (costoBase * 40 / 100);
+        var costoBiglietto = costoOver.toFixed(2) + " euro" + " (hai più di 65 anni, è già stato applicato uno sconto del 40% )"  ;;
 
     }else {
 
-        var costoBiglietto = costoBase;
+        var costoBiglietto = costoBase.toFixed(2) + " euro";
 
     }
 
 // scrivere all'utente l'importo totale del biglietto
 
-    document.getElementById('costo').innerHTML = "Questo è il costo del biglietto per il tuo tragitto: " + costoBiglietto + " euro";
+    document.getElementById('costo').innerHTML = "Il costo del biglietto è: " + costoBiglietto;
